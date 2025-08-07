@@ -1,4 +1,4 @@
-package service;
+package com.eccomerce_teste.demo.service;
 
 import com.eccomerce_teste.demo.model.Product;
 import com.eccomerce_teste.demo.repository.ProductRepository;

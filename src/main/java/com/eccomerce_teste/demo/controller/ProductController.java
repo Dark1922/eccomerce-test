@@ -1,9 +1,9 @@
-package controller;
+package com.eccomerce_teste.demo.controller;
 
 import com.eccomerce_teste.demo.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import service.ProductService;
+import com.eccomerce_teste.demo.service.ProductService;
 
 import java.util.List;
 

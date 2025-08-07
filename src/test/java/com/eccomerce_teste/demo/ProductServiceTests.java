@@ -5,11 +5,17 @@ import com.eccomerce_teste.demo.model.Product;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import service.ProductService;
+import com.eccomerce_teste.demo.service.ProductService;
+import org.springframework.test.context.ActiveProfiles;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-@SpringBootTest
+@SpringBootTest(properties = {
+        "spring.data.redis.repositories.enabled=false",
+        "spring.redis.enabled=false",
+        "spring.cache.type=none"
+})
+@ActiveProfiles("test")
 public class ProductServiceTests {
 
     @Autowired
